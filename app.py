@@ -52,9 +52,6 @@ try:
         urllib.request.urlretrieve(details[1], 'data/inscr_data.db')
         update_log(f"Data updated from version {data_version()} to version {latest_version} \n")
 
-        with open('data/secret.key', 'w') as key_w:
-            key_w.write(details[2])
-            key_w.close()
 
 
         with open('data/version.sai', 'r+') as f_v:
