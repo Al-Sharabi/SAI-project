@@ -135,6 +135,7 @@ class mainWindow(QtWidgets.QMainWindow):
         self.setWindowIcon(QtGui.QIcon('sai_icon.ico'))
         self.title_inscr_label.setAlignment(QtCore.Qt.AlignCenter)
         self.language_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.source_code_action.triggered.connect(lambda: webbrowser.open('https://github.com/Al-Sharabi/SAI-project'))
         
 
         self.dataversion.setText(f"v {data_version()}")
